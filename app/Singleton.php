@@ -34,6 +34,12 @@ class Singleton {
         return self::$instance;
     }
     
+    
+    /**
+     * 
+     * @see __toString()
+     * 
+     */
     public function __toString() {
         return spl_object_hash($this);
     }

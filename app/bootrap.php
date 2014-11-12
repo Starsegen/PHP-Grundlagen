@@ -15,6 +15,7 @@ function __autoload($klasse){
     
     //echo 'Ich sein loader' . PHP_EOL;
     include '../app/' .$klasse . ".php";
+    //include '../app/uebungen/AssoziationsBeziehungen/' .$klasse . ".php";
 }
 
 function config($datei){
@@ -34,8 +35,8 @@ function config($datei){
         throw new Exception("ungültige Konfiguration");
     }
     
-    foreach ($config['mysql'] as $key => $value) {
-        
-        define(strtoupper($key), $value);
-    }
+//    foreach ($config['mysql'] as $key => $value) {
+//        
+//        define(strtoupper($key), $value);
+//    }
 }
